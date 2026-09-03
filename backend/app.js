@@ -13,7 +13,7 @@ mongoose.connect(process.env.MONGO_URI);
 
 // Import des modèles
 const projet = require('./models/Proj');
-const inv = require('./models/inv');
+const inv = require('./models/Inv');
 const enp = require('./models/Entr');
 const adm = require('./models/Admin');
 const reunion = require('./models/Reuin');
