@@ -44,7 +44,7 @@ export default function Register_enp() {
 
     console.log('données envoyées', data);
 
-    axios.post('http://localhost:8000/Register_enp', data)
+axios.post(`${process.env.REACT_APP_API_URL}/Register_enp`, data)
       .then((res) => {
         console.log(res.data.message);
         alert('Compte créé avec succès !');

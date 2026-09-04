@@ -57,7 +57,7 @@ export default function Poster_pr() {
 
     setLoading(true);
 
-    axios.post('http://localhost:8000/Projet', data)
+    axios.post(`${process.env.REACT_APP_API_URL}/Poster`, data)
       .then((res) => {
         console.log(res.data.message);
         alert('Projet ajouté avec succès !');
