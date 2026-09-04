@@ -9,7 +9,7 @@ require('dotenv').config();
 
 const JWT_SECRET = 'a3f7c9e21b4d8f6a1c5e9b2d7f4a8c1e6b3d9f2a7c4e8b1d6f9a2c5e8b3d7f4a1c6e9b2d5f8a3c7e1b4d9f6a2c8e5b1d4f7a9c2e6b3d8f1a5c9e2b7d4f1a8c6';
 // Connexion à MongoDB
-mongoose.connect(process.env.MONGO_URI);
+mongoose.connect(process.env.MONGO_URI, { family: 4 });
 
 // Import des modèles
 const projet = require('./models/Proj');
