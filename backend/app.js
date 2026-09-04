@@ -20,9 +20,9 @@ const reunion = require('./models/Reuin');
 const contrat = require('./models/Contrat');
 
 app.use(cors({
-  origin: ['http://localhost:3000', 'http://localhost:3001'],
+  origin: ['http://localhost:3000', 'http://localhost:3001' , 'https://invest-connect-eight.vercel.app'],
   methods: ['GET', 'POST', 'DELETE', 'OPTIONS', 'PATCH', 'PUT'],
-  allowedHeaders: ['Origin', 'Accept', 'Content-Type', 'X-Requested-With', 'Authorization'],
+  allowedHeaders: ['Origin', 'Accept', 'Content-Type', 'X-Requeste-With', 'Authorization'],
 }));
 
 // parse application/x-www-form-urlencoded
